@@ -1,0 +1,21 @@
+to run this project please run following command, please make sure docker is installed in your system
+docker-compose up --build
+
+This project contain following Apis 
+
+POST /login -  to login , take username and password
+POST /signUp - to signup, take username  ,password and role . role can be "admin" or "user"
+
+POST /groceryItems/  -> to add the item 
+GET /groceryItems/list  -> to get the list of the items 
+GET /groceryItems/:id/  -> to get the single item using id
+PUT /groceryItems/:id/   -> to edit the single item using id
+DELETE /groceryItems/:id/  -> to delete the single item using id
+PATCH /groceryItems/:id/inventory  -> to update the inventory of item using id
+
+POST /order/items - to order , take array of objects having grocery item id and quantity
+
+please Use below link for api documentation
+https://documenter.getpostman.com/view/15719725/2sA2xe3u1i
+
+
